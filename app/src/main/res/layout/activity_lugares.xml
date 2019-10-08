@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LugaresActivity">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="16dp">
+
+        <RelativeLayout android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="760dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:background="@drawable/layaout_product"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:id="@+id/name_place"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:paddingStart="32dp"
+                    android:paddingEnd="32dp"
+                    android:textSize="30dp"
+                    android:text="Administración de Lugares"
+                    android:textColor="@color/dark_green"
+                    />
+
+                <TextView
+                    android:id="@+id/type_place"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:paddingStart="32dp"
+                    android:paddingEnd="32dp"
+                    android:textSize="20dp"
+                    android:text="Agregar nuevo lugar  +"
+                    android:textColor="@color/dark_green"
+                    />
+
+                <GridLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:columnCount="3"
+                    android:paddingStart="32dp"
+                    android:padding="10dp"
+                    android:paddingTop="0dp"
+                    android:gravity="center"
+                    android:paddingLeft="32dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="15dp"
+                        android:textSize="20dp"
+                        android:text="#"
+                        android:textColor="@color/dark_green"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:paddingStart="28dp"
+                        android:paddingEnd="28dp"
+                        android:textSize="20dp"
+                        android:text="Nombre del lugar"
+                        android:textColor="@color/dark_green"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:textSize="20dp"
+                        android:text="Acciones"
+                        android:textColor="@color/dark_green" />
+
+                </GridLayout>
+
+                <GridLayout
+                    android:id="@+id/gridlayout_lugares"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:columnCount="4"
+                    android:paddingStart="32dp"
+                    android:padding="10dp"
+                    android:paddingTop="0dp"
+                    android:gravity="center"
+                    android:paddingLeft="32dp">
+
+                    <TextView
+                        android:id="@+id/numeroLugar"
+                        android:layout_width="25dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="15dp"
+                        android:textSize="15dp"
+                        android:text="1"
+                        android:maxLines="1"
+                        android:maxLength="3"
+                        android:textColor="@color/dark_gray" />
+
+                    <TextView
+                        android:id="@+id/lugar"
+                        android:layout_width="225dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:paddingStart="50dp"
+                        android:paddingEnd="50dp"
+                        android:maxLines="1"
+                        android:maxLength="16"
+                        android:ellipsize="end"
+                        android:text="Árbol de Seda"
+                        android:textColor="@color/dark_gray"
+                        android:textSize="15dp" />
+
+                    <Button
+                        android:id="@+id/eliminarLugar"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="20dp"
+                        android:background="@drawable/eliminar" />
+
+                </GridLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/linea"
+                        android:layout_width="350dp"
+                        android:layout_height="1dp"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+
+                        android:background="@color/dark_green"
+                        android:layout_gravity="center"/>
+
+                <GridLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:columnCount="4"
+                    android:paddingStart="32dp"
+                    android:padding="10dp"
+                    android:paddingTop="0dp"
+                    android:gravity="center"
+                    android:paddingLeft="32dp">
+
+                    <TextView
+                        android:layout_width="25dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="15dp"
+                        android:textSize="15dp"
+                        android:text="2"
+                        android:textColor="@color/dark_gray"
+                        />
+
+                    <TextView
+                        android:layout_width="225dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:paddingStart="65dp"
+                        android:paddingEnd="65dp"
+                        android:textSize="15dp"
+                        android:maxLines="1"
+                        android:maxLength="16"
+                        android:ellipsize="end"
+                        android:text="Recicla Esparza"
+
+                        android:textColor="@color/dark_gray" />
+
+
+                    <Button
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="20dp"
+                        android:background="@drawable/eliminar" />
+
+                </GridLayout>
+
+                <LinearLayout
+                    android:layout_width="350dp"
+                    android:layout_height="1dp"
+                    android:gravity="center"
+                    android:background="@color/dark_green"
+                    android:layout_gravity="center"/>
+
+                <GridLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:columnCount="4"
+                    android:paddingStart="32dp"
+                    android:padding="10dp"
+                    android:paddingTop="0dp"
+                    android:gravity="center"
+                    android:paddingLeft="32dp">
+
+                    <TextView
+                        android:layout_width="25dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="15dp"
+                        android:textSize="15dp"
+                        android:text="3"
+                        android:textColor="@color/dark_gray"
+                        />
+
+                    <TextView
+                        android:layout_width="225dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:paddingStart="65dp"
+                        android:paddingEnd="65dp"
+                        android:textSize="15dp"
+                        android:maxLines="1"
+                        android:maxLength="16"
+                        android:ellipsize="end"
+                        android:text="Lugar tres"
+                        android:textColor="@color/dark_gray"
+                        />
+
+
+
+                    <Button
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="20dp"
+                        android:background="@drawable/eliminar" />
+
+                </GridLayout>
+
+                <LinearLayout
+                    android:layout_width="350dp"
+                    android:layout_height="1dp"
+                    android:gravity="center"
+                    android:background="@color/dark_green"
+                    android:layout_gravity="center"/>
+
+                <GridLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:columnCount="4"
+                    android:paddingStart="32dp"
+                    android:padding="10dp"
+                    android:paddingTop="0dp"
+                    android:gravity="center"
+                    android:paddingLeft="32dp">
+
+                    <TextView
+                        android:layout_width="25dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="15dp"
+                        android:textSize="15dp"
+                        android:text="4"
+                        android:textColor="@color/dark_gray"
+                        />
+
+                    <TextView
+                        android:layout_width="225dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:paddingStart="65dp"
+                        android:paddingEnd="65dp"
+                        android:textSize="15dp"
+                        android:text="Lugar Cuatro"
+                        android:textColor="@color/dark_gray"
+                        />
+
+                    <Button
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="20dp"
+                        android:background="@drawable/eliminar" />
+
+                </GridLayout>
+
+                <LinearLayout
+                    android:layout_width="350dp"
+                    android:layout_height="1dp"
+                    android:gravity="center"
+                    android:background="@color/dark_green"
+                    android:layout_gravity="center"/>
+
+                <GridLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:columnCount="4"
+                    android:paddingStart="32dp"
+                    android:padding="10dp"
+                    android:paddingTop="0dp"
+                    android:gravity="center"
+                    android:paddingLeft="32dp">
+
+                    <TextView
+                        android:layout_width="25dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="15dp"
+                        android:textSize="15dp"
+                        android:text="5"
+                        android:textColor="@color/dark_gray"
+                        />
+
+                    <TextView
+                        android:layout_width="225dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:paddingStart="65dp"
+                        android:paddingEnd="65dp"
+                        android:textSize="15dp"
+                        android:text="Lugar Cinco"
+                        android:textColor="@color/dark_gray"
+                        />
+
+
+
+                    <Button
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="20dp"
+                        android:background="@drawable/eliminar" />
+
+                </GridLayout>
+
+                <LinearLayout
+                    android:layout_width="350dp"
+                    android:layout_height="1dp"
+                    android:gravity="center"
+                    android:background="@color/dark_green"
+                    android:layout_gravity="center"/>
+
+                <GridLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:columnCount="4"
+                    android:paddingStart="32dp"
+                    android:padding="10dp"
+                    android:paddingTop="0dp"
+                    android:gravity="center"
+                    android:paddingLeft="32dp">
+
+                    <TextView
+                        android:layout_width="25dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="15dp"
+                        android:textSize="15dp"
+                        android:text="6"
+                        android:textColor="@color/dark_gray"
+                        />
+
+                    <TextView
+                        android:layout_width="225dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:paddingStart="65dp"
+                        android:paddingEnd="65dp"
+                        android:textSize="15dp"
+                        android:text="Lugar Seis"
+                        android:textColor="@color/dark_gray"
+                        />
+
+                    <Button
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="20dp"
+                        android:background="@drawable/eliminar" />
+
+                </GridLayout>
+
+                <LinearLayout
+                    android:layout_width="350dp"
+                    android:layout_height="1dp"
+                    android:gravity="center"
+                    android:background="@color/dark_green"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/CoordinatorLayout01"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+
+        <it.sephiroth.android.library.bottomnavigation.BottomNavigation
+            android:id="@+id/BottomNavigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            app:bbn_entries="@menu/menu"
+            app:bbn_scrollEnabled="true"
+            app:bbn_badgeProvider="@string/bbn_badgeProvider"
+            app:layout_behavior="@string/bbn_phone_view_behavior" />
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</RelativeLayout>

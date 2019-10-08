@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="San José"
+        android:id="@+id/san_jose"/>
+
+    <item android:title="Alajuela"
+        android:id="@+id/alajuela"/>
+
+    <item android:title="Cartago"
+        android:id="@+id/cartago"/>
+
+    <item android:title="Heredia"
+        android:id="@+id/heredia"/>
+
+    <item android:title="Puntarenas"
+        android:id="@+id/puntarenas"/>
+
+    <item android:title="Guanacaste"
+        android:id="@+id/guanacaste"/>
+
+    <item android:title="Limon"
+        android:id="@+id/limon"/>
+
+</menu>

@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Punto Verde</string>
+    <string name="google_maps_key">AIzaSyA9loQzIzQQQQ7FO176ccTjWb_NOnuJMOs</string>
+
+    <string-array name="Provincias">
+        <item>---Seleccione Provincia---</item>
+        <item>San José</item>
+        <item>Alajuela</item>
+        <item>Cartago</item>
+        <item>Heredia</item>
+        <item>Puntarenas</item>
+        <item>Guanacaste</item>
+        <item>Limon</item>
+    </string-array>
+
+    <string-array name="Categorias">
+        <item>---Seleccione Categoria---</item>
+        <item>Centro de Reciclaje</item>
+        <item>Restaurante</item>
+        <item>Hotel</item>
+
+    </string-array>
+
+</resources>

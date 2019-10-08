@@ -1,0 +1,511 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ProductActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="16dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <RelativeLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imagen_lugar"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="-35dp"
+                    android:layout_height="270dp"
+                    app:srcCompat="@drawable/polloo"/>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginTop="175dp"
+                    android:background="@drawable/layaout_product"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/name_place"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="24dp"
+                        android:paddingStart="32dp"
+                        android:paddingEnd="32dp"
+                        android:textSize="30dp"
+                        android:text="Arbol de Seda"
+                        android:textColor="@color/dark_green"
+                        />
+                    <TextView
+                        android:id="@+id/type_place"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp"
+                        android:paddingStart="32dp"
+                        android:paddingEnd="32dp"
+                        android:textSize="20dp"
+                        android:text="Restaurante vegetariano"
+                        android:textColor="@color/dark_gray"
+                        />
+
+                    <GridLayout
+                        android:id="@+id/gridlayout_estrellas"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:columnCount="5"
+                        android:paddingStart="32dp"
+                        android:padding="10dp"
+                        android:paddingTop="0dp"
+                        android:gravity="center"
+                        android:paddingLeft="32dp">
+
+                        <ImageView
+                            android:id="@+id/estrella1"
+                            android:layout_width="17dp"
+                            android:layout_height="17dp"
+                            android:layout_marginRight="7dp"
+                            app:srcCompat="@drawable/estrellarellena" />
+                        <ImageView
+                            android:id="@+id/estrella2"
+                            android:layout_width="17dp"
+                            android:layout_height="17dp"
+                            android:layout_marginRight="7dp"
+                            app:srcCompat="@drawable/estrellarellena" />
+                        <ImageView
+                            android:id="@+id/estrella3"
+                            android:layout_width="17dp"
+                            android:layout_height="17dp"
+                            android:layout_marginRight="7dp"
+                            app:srcCompat="@drawable/estrellarellena" />
+                        <ImageView
+                            android:id="@+id/estrella4"
+                            android:layout_width="17dp"
+                            android:layout_height="17dp"
+                            android:layout_marginRight="7dp"
+                            app:srcCompat="@drawable/estrellarellena" />
+                        <ImageView
+                            android:id="@+id/estrella5"
+                            android:layout_width="17dp"
+                            android:layout_height="17dp"
+                            android:layout_marginRight="7dp"
+                            app:srcCompat="@drawable/estrellavaciamasrellena" />
+
+                    </GridLayout>
+
+                    <TextView
+                        android:id="@+id/descriptionTitle_place"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:paddingStart="32dp"
+                        android:paddingEnd="32dp"
+                        android:textSize="22dp"
+                        android:text="Descripcion"
+                        android:textColor="@color/dark_green"
+                        />
+                    <TextView
+                        android:id="@+id/description_place"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:paddingStart="32dp"
+                        android:paddingEnd="32dp"
+                        android:textSize="15dp"
+                        android:text="Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam eget, porta phasellus nascetur ullamcorper faucibus senectus felis mus volutpat."
+                        android:textColor="@color/dark_gray"
+                        />
+                    <TextView
+                        android:id="@+id/timetableTitle_place"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:paddingStart="32dp"
+                        android:paddingEnd="32dp"
+                        android:textSize="22dp"
+                        android:text="Horario"
+                        android:textColor="@color/dark_green"
+                        />
+                    <TextView
+                        android:id="@+id/timetable_place"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:paddingStart="32dp"
+                        android:paddingEnd="32dp"
+                        android:textSize="15dp"
+                        android:text="De 9:00 a.m a 10:00 pm"
+                        android:textColor="@color/dark_gray" />
+
+                    <TextView
+                        android:id="@+id/Contactos"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:paddingStart="32dp"
+                        android:paddingEnd="32dp"
+                        android:textSize="22dp"
+                        android:text="Contactos"
+                        android:textColor="@color/dark_green"
+                        />
+
+                    <TextView
+                        android:id="@+id/contact_place"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:paddingStart="32dp"
+                        android:paddingEnd="32dp"
+                        android:textSize="15dp"
+                        android:text="Tel: 2222-2222"
+                        android:textColor="@color/dark_gray" />
+
+                    <TextView
+                        android:id="@+id/web"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:paddingStart="32dp"
+                        android:paddingEnd="32dp"
+                        android:textSize="22dp"
+                        android:text="Web"
+                        android:textColor="@color/dark_green"
+                        />
+
+                    <TextView
+                        android:id="@+id/web_place"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:paddingStart="32dp"
+                        android:paddingEnd="32dp"
+                        android:textSize="15dp"
+                        android:text="- - -"
+                        android:textColor="@color/dark_gray" />
+
+
+                    <TextView
+                        android:id="@+id/ubicationTitle_place"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:paddingStart="32dp"
+                        android:paddingEnd="32dp"
+                        android:textSize="22dp"
+                        android:text="Ubicacion"
+                        android:textColor="@color/dark_green"
+                        />
+
+
+
+                    <com.jcminarro.roundkornerlayout.RoundKornerFrameLayout
+                        android:layout_width="300dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center"
+                        app:corner_radius="16dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#000">
+
+
+                        <Button
+                            android:id="@+id/btn_mapa"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:radius="150dp"
+                            android:background="@drawable/map"
+                            android:onClick="onClick"
+                            />
+
+
+                    </com.jcminarro.roundkornerlayout.RoundKornerFrameLayout>
+
+                    <TextView
+                        android:id="@+id/galeryTitle_place"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:paddingStart="32dp"
+                        android:paddingEnd="32dp"
+                        android:textSize="22dp"
+                        android:text="Galeria de Imagenes"
+                        android:textColor="@color/dark_green"
+                        />
+
+
+                    <GridLayout
+                        android:id="@+id/gridlayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="100dp"
+                        android:columnCount="4"
+                        android:gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginHorizontal="10dp">
+
+                        <com.jcminarro.roundkornerlayout.RoundKornerFrameLayout
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_marginRight="7dp"
+                            app:corner_radius="16dp"
+                            android:background="#000">
+
+                            <ImageView
+                                android:id="@+id/imagen_lugar1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                app:srcCompat="@drawable/p1" />
+
+                        </com.jcminarro.roundkornerlayout.RoundKornerFrameLayout>
+
+                        <com.jcminarro.roundkornerlayout.RoundKornerFrameLayout
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_marginRight="7dp"
+                            app:corner_radius="16dp"
+                            android:background="#000">
+
+
+                            <ImageView
+                                android:id="@+id/imagen_lugar2"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                app:srcCompat="@drawable/p2" />
+
+
+                        </com.jcminarro.roundkornerlayout.RoundKornerFrameLayout>
+
+                        <com.jcminarro.roundkornerlayout.RoundKornerFrameLayout
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_marginRight="7dp"
+                            app:corner_radius="16dp"
+                            android:background="#000">
+
+
+                            <ImageView
+                                android:id="@+id/imagen_lugar3"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                app:srcCompat="@drawable/p3" />
+
+
+                        </com.jcminarro.roundkornerlayout.RoundKornerFrameLayout>
+
+                        <com.jcminarro.roundkornerlayout.RoundKornerFrameLayout
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_marginRight="7dp"
+                            app:corner_radius="16dp"
+                            android:background="#000">
+
+                            <ImageView
+                                android:id="@+id/imagen_lugar4"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                app:srcCompat="@drawable/p4" />
+
+
+                        </com.jcminarro.roundkornerlayout.RoundKornerFrameLayout>
+
+                    </GridLayout>
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btn_fav"
+                    android:layout_width="57dp"
+                    android:layout_height="57dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="145dp"
+                    android:background="@drawable/favorito" />
+
+                <Button
+                    android:id="@+id/btn_product_back"
+                    android:layout_width="37dp"
+                    android:layout_height="37dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/botonatrasblanco" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:background="@drawable/layaout_product_coments"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/title_Coments"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:paddingStart="32dp"
+                    android:paddingEnd="32dp"
+                    android:textSize="20dp"
+                    android:text="Reseña"
+                    android:textColor="@color/dark_green"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginRight="35dp"
+                    android:orientation="horizontal">
+
+                    <com.jcminarro.roundkornerlayout.RoundKornerFrameLayout
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        app:corner_radius="360dp"
+                        android:layout_marginLeft="32dp"
+                        android:layout_marginRight="15dp"
+                        android:background="#000">
+
+
+                        <ImageView
+                            android:id="@+id/imagen_galariae2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/p2" />
+
+
+                    </com.jcminarro.roundkornerlayout.RoundKornerFrameLayout>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_marginTop="10dp"
+                        android:hint="Escribe una reseña"
+                        android:textColorHint="@color/dark_green"
+                        android:padding="5dp"
+                        android:inputType="textMultiLine"
+                        android:background="@drawable/edit_text_rounded"/>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginVertical="10dp"
+                    android:layout_marginHorizontal="30dp"
+                    android:background="@color/dark_green"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:orientation="horizontal">
+
+                    <com.jcminarro.roundkornerlayout.RoundKornerFrameLayout
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginRight="7dp"
+                        android:layout_gravity="center"
+                        app:corner_radius="360dp"
+                        android:layout_marginLeft="32dp"
+                        android:background="#000">
+
+
+                        <ImageView
+                            android:id="@+id/imagen_persona"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/p2" />
+
+
+
+                    </com.jcminarro.roundkornerlayout.RoundKornerFrameLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:layout_marginRight="22dp"
+                        android:orientation="vertical"
+                        >
+                        <TextView
+                            android:id="@+id/personComentName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:paddingStart="2dp"
+                            android:paddingEnd="2dp"
+                            android:textSize="11dp"
+                            android:text="Ana Quiros"
+                            android:textColor="@color/dark_green"
+                            />
+
+                        <TextView
+                            android:id="@+id/contentTextComent"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginHorizontal="5dp"
+                            android:textSize="9dp"
+                            android:text="Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam eget, porta"
+                            android:textColor="@color/dark_green"
+                            />
+
+                        <TextView
+                            android:id="@+id/comentDate"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:paddingStart="2dp"
+                            android:paddingEnd="2dp"
+                            android:gravity="right"
+                            android:textSize="9dp"
+                            android:text="September 9,2019."
+                            android:textColor="@color/dark_gray_light"
+                            />
+
+
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/CoordinatorLayout01"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_places"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <it.sephiroth.android.library.bottomnavigation.BottomNavigation
+            android:id="@+id/BottomNavigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            app:bbn_entries="@menu/menu"
+            app:bbn_scrollEnabled="true"
+            app:bbn_badgeProvider="@string/bbn_badgeProvider"
+            app:layout_behavior="@string/bbn_phone_view_behavior" />
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</LinearLayout>

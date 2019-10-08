@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FormProductActivity">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="32dp"
+            android:paddingEnd="32dp"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="44dp"
+                android:text="Creación del lugar"
+                android:textSize="30dp"
+                android:textColor="@color/dark_green"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Imagen Principal"
+                android:textSize="20dp"
+                android:textColor="@color/dark_green"/>
+
+
+            <ImageView
+                android:id="@+id/imagen_lugar"
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:layout_marginTop="20dp"
+                app:srcCompat="@drawable/subirimagen" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="Nombre"
+                android:textSize="20dp"
+                android:textColor="@color/dark_green"
+                />
+
+
+            <EditText
+                android:id="@+id/text_lugar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textVisiblePassword" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="Descripción"
+                android:textSize="20dp"
+                android:textColor="@color/dark_green"
+                />
+
+            <EditText
+                android:id="@+id/text_descripcion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textVisiblePassword"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="Tipo del lugar"
+                android:textSize="20dp"
+                android:textColor="@color/dark_green"/>
+
+            <Spinner
+                android:id="@+id/category"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/spinner_text"
+                android:entries="@array/Categorias"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="Contacto"
+                android:textSize="20dp"
+                android:textColor="@color/dark_green"/>
+
+            <EditText
+                android:id="@+id/txt_contacto"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="textVisiblePassword" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="Web"
+                android:textSize="20dp"
+                android:textColor="@color/dark_green"/>
+
+            <EditText
+                android:id="@+id/txt_web"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="textVisiblePassword" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="Horario"
+                android:textSize="20dp"
+                android:textColor="@color/dark_green"/>
+
+            <EditText
+                android:id="@+id/txt_horario"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="textVisiblePassword" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="Provincia"
+                android:textSize="20dp"
+                android:textColor="@color/dark_green"/>
+
+            <Spinner
+                android:id="@+id/provincias"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="15dp"
+                android:entries="@array/Provincias"
+                android:background="@drawable/spinner_text"
+                >
+
+            </Spinner>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="Galería de imágenes"
+                android:textSize="20dp"
+                android:textColor="@color/dark_green"/>
+
+            <HorizontalScrollView
+                android:id="@+id/scrollView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="horizontal">
+
+                <GridLayout
+                    android:id="@+id/gridlayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:columnCount="4"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp">
+
+                    <ImageView
+                        android:id="@+id/imagen_lugar1"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_marginRight="7dp"
+                        app:srcCompat="@drawable/subirimagen"
+                        android:background="@drawable/image_pequena_borde"/>
+
+                </GridLayout>
+
+            </HorizontalScrollView>
+
+            <Button
+                android:id="@+id/btn_register"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="100dp"
+                android:gravity="center"
+                android:background="@drawable/rounded_button"
+                android:text="Agregar"
+                android:textSize="20dp"
+                android:textColor="@color/white"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn_product_back"
+        android:layout_width="37dp"
+        android:layout_height="37dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/btngruesov"/>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/CoordinatorLayout01"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+
+        <it.sephiroth.android.library.bottomnavigation.BottomNavigation
+            android:id="@+id/BottomNavigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            app:bbn_entries="@menu/menu"
+            app:bbn_scrollEnabled="true"
+            app:bbn_badgeProvider="@string/bbn_badgeProvider"
+            app:layout_behavior="@string/bbn_phone_view_behavior" />
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</RelativeLayout>
